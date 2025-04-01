@@ -46,7 +46,7 @@
 		"nanoid": "5.0.7",
 		"node-cache": "5.1.2",
 		"nodemon": "3.0.2",
-		"pdfmake": "0.2.10",
+		"pdfmake": "0.2.18",
 		"perfect-express-sanitizer": "1.0.13",
 		"prisma": "6.4.1",
 		"resend": "3.3.0",
