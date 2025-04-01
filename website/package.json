@@ -26,7 +26,7 @@
     "axios": "1.7.2",
     "editorjs-parser": "1.5.3",
     "fuse.js": "6.6.2",
-    "marked": "15.0.6",
+    "marked": "15.0.7",
     "pagefind": "1.1.0",
     "prettier": "3.4.2",
     "rehype-slug": "6.0.0",
