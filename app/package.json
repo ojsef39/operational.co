@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@floating-ui/dom": "1.6.9",
+    "@floating-ui/dom": "1.6.13",
     "@mdx-js/rollup": "3.0.1",
     "@mdx-js/vue": "3.0.1",
     "@operational.co/components": "*",
