@@ -17,7 +17,7 @@
     "@operational.co/styles": "*",
     "@popperjs/core": "2.11.8",
     "@rollup/plugin-babel": "6.0.4",
-    "@speed-highlight/core": "1.2.6",
+    "@speed-highlight/core": "1.2.7",
     "@stripe/stripe-js": "3.5.0",
     "@turf/turf": "6.5.0",
     "@vue/babel-plugin-jsx": "1.2.2",
