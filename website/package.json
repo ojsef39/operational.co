@@ -21,7 +21,7 @@
     "@operational.co/content": "^1.0.1",
     "@operational.co/lib": "*",
     "@operational.co/styles": "*",
-    "@speed-highlight/core": "1.2.6",
+    "@speed-highlight/core": "1.2.7",
     "astro": "5.3.1",
     "axios": "1.7.2",
     "editorjs-parser": "1.5.3",
