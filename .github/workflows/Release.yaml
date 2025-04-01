@@ -52,9 +52,11 @@ jobs:
       matrix:
         include:
           - name: app
-            context: app
+            context: .
+            file: ./app/Dockerfile
           - name: backend
             context: backend
+            file: ./backend/Dockerfile
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -75,7 +77,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ${{ matrix.context }}
-          push: true
+          file: ${{ matrix.file }}
+          push: false
           tags: |
             ghcr.io/operational-co/operational.co-${{ matrix.name }}:${{ needs.version.outputs.version }}
             ghcr.io/operational-co/operational.co-${{ matrix.name }}:latest
