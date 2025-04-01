@@ -46,7 +46,6 @@ jobs:
 
   build:
     needs: version
-    if: needs.version.outputs.version != ''
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -76,9 +75,9 @@ jobs:
         with:
           context: ${{ matrix.context }}
           file: ${{ matrix.file }}
-          push: ${{ github.event_name == 'push' }}
+          push: ${{ github.event_name == 'push' && needs.version.outputs.version != '' }}
           tags: |
-            ghcr.io/operational-co/operational.co-${{ matrix.name }}:${{ needs.version.outputs.version }}
+            ghcr.io/operational-co/operational.co-${{ matrix.name }}:${{ needs.version.outputs.version || '0.0.0' }}
             ghcr.io/operational-co/operational.co-${{ matrix.name }}:latest
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
